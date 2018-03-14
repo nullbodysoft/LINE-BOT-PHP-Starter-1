@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
       // Get text sent			
       $text = $event['message']['text'];	
       //if($text=="summary")
+        echo $text;
         $text ="สรุปการเปิด Logbook IDC";
       // Get replyToken			
       $replyToken = $event['replyToken'];			
