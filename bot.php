@@ -12,7 +12,7 @@ if (!is_null($events['events'])) {
     if ($event['type'] == 'message' && $event['message']['type'] == 'text') {			
       // Get text sent			
       $text = $event['message']['text'];	
-      if($text=="summary")
+      //if($text=="summary")
         $text ="สรุปการเปิด Logbook IDC";
       // Get replyToken			
       $replyToken = $event['replyToken'];			
