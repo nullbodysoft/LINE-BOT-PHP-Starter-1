@@ -28,8 +28,9 @@ if (!is_null($events['events'])) {
       curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);			
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);			
       $result = curl_exec($ch);			
-      curl_close($ch);			
-      echo $result . "";		
+      curl_close($ch);
+      if($result=="Summary")
+      echo "สรุป Logbook ประจำวันของ IDC";		
     }	
   }
 }
